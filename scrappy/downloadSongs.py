@@ -1,6 +1,6 @@
 import yt_dlp
 import json
-from getDownloadPath import get_default_download_path
+from .getDownloadPath import get_default_download_path
 import random
 import time
 

@@ -21,8 +21,9 @@ def spotifyConnect():
     sp = spotipy.Spotify(auth_manager=auth_manager)
     return sp
 
-def fetchSongs(playlistId, sp):
-    playlist = sp.playlist_tracks(playlistId)
+def fetchSongs(args):
+    sp = spotifyConnect()
+    playlist = sp.playlist_tracks(args.playlistId)
     tracks = [track["track"] for track in playlist["items"]]
 
     while playlist["next"]:
@@ -50,5 +51,5 @@ def fetchSongs(playlistId, sp):
 if __name__ =="__main__":
     playlistId = "2TQPDqPPnTZZjkx4u4jGRM"
     sp = spotifyConnect()
-    tracks = fetchSongs(playlistId, sp)
+    tracks = fetchSongs(playlistId)
 
