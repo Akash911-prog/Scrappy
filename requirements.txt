@@ -1,2 +1,4 @@
 spotipy
 yt_dlp
+ffmpeg
+ffprobe
