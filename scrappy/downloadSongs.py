@@ -117,7 +117,7 @@ def downloadSongs(format, oneSong=""):
     for i, batch in enumerate(batches_of_10):
         download_batch(batch, ytld_options)
         if i < len(batches_of_10) - 1:
-            wait_time = random.randint(180, 600)  # 3 to 10 minutes
+            wait_time = random.randint(180, 300)  # 3 to 5 minutes
             print(f"Batch {i+1} done. Waiting {wait_time} seconds before next batch...")
             time.sleep(wait_time)
     
