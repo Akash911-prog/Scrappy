@@ -2,7 +2,6 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import os
 import json
-from pprint import pprint as print
 
 
 def spotifyConnect():
