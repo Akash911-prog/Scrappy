@@ -43,10 +43,6 @@ def fetchSongs(args):
         json.dump(simplified_tracks, f, ensure_ascii=False, indent=4)
 
 
-
-
-
-
 if __name__ =="__main__":
     playlistId = "2TQPDqPPnTZZjkx4u4jGRM"
     sp = spotifyConnect()
