@@ -1,9 +1,8 @@
 import argparse
 import os
-import subprocess
 import sys
-from downloadSongs import downloadSongs
-from fetchSongs import fetchSongs
+from scrappy.downloadSongs import downloadSongs
+from scrappy.fetchSongs import fetchSongs
 
 VERSION = "1.0.0"
 
